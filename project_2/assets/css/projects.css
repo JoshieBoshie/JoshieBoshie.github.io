@@ -1,0 +1,224 @@
+body {
+	margin: 0px;
+	/* background-image: url("../img/clouds.jpg"); */
+	background-position: center;
+	font-family: 'Avenir';
+	/* position: fixed; */
+	/* overflow:hidden; */
+	background-color:#F7F7F7;
+  /* background-image: linear-gradient(to right,#232526, #414345); */
+  height:500px;
+  width:90%;
+
+}
+
+/* .project-item {
+} */
+
+* { box-sizing: border-box; }
+
+.projects {
+	/* border: 1px solid blue; */
+	width:63%;
+	height:110%;
+	position: relative;
+	top:25%;
+	left:20%;
+}
+
+div > a, p > a{
+  position: relative;
+  color: #FFF;
+  text-decoration: none;
+}
+
+div > a:hover, p > a:hover {
+  color: white;
+}
+
+div > a:before, p > a:before{
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #FFF;
+  visibility: hidden;
+  -webkit-transform: scaleX(0);
+  transform: scaleX(0);
+  -webkit-transition: all 0.3s ease-in-out 0s;
+  transition: all 0.3s ease-in-out 0s;
+}
+
+div > a:hover:before, p > a:hover:before{
+  visibility: visible;
+  -webkit-transform: scaleX(1);
+  transform: scaleX(1);
+}
+
+
+.name {
+	opacity: 0;
+	color: white;
+  /* position:absolute;
+	margin:0; */
+	/* position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 50%;
+    height: 30%;
+    margin: auto; */
+	/* top:40%;
+	left:35%; */
+	position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.projectss {
+	position:relative;
+	margin:0;
+	top:40%;
+	left:35%;
+}
+
+.project-item {
+	/* text-align: center; */
+	position:relative;
+	height:180px;
+	margin:0;
+	width:200px;
+	/* border: 1px solid blue; */
+	float: left;
+}
+
+.project-item:hover .name{
+	transition-duration: .5s;
+	opacity: 1;
+	color: white;
+}
+
+@keyframes preview {
+	from {
+	}
+  to {
+		filter: brightness(.5);
+		background-color: rgba(0, 0, 0, 0.5);
+		opacity: inherit;
+	}
+}
+
+
+.project-item:hover img{
+	animation-name: preview;
+	animation-duration: 0.2s;
+	animation-timing-function: ease-in;
+	animation-delay: 0s;
+	animation-fill-mode: forwards;
+	/* animation-iteration-count: 2;
+	animation-direction: reverse; */
+}
+/* .grid-item--width2 { width: 400px; } */
+
+#greeting {
+   width: 500px;
+   height: 50px;
+   position: absolute;
+   /* top: 50%; */
+   top:15%;
+   left: 50%;
+   margin-top: -100px;
+   margin-left: -210px;
+
+}
+
+img {
+	width:100%;
+	height:100%;
+	/* object-fit: contain; */
+}
+
+#navbar {
+	/* position: fixed; */
+	/* top: 230px; */
+	left: 80%;
+	display: flex;
+	background: linear-gradient(to right,#36D1DC,#5B86E5);
+	height:10%;
+	margin:0;
+	/* flex-direction:  */
+}
+.navbar_item {
+	margin-right:50px;
+	margin-left: 50px;
+}
+a {
+	color: #FFFFFF;
+  text-decoration: none;
+}
+
+
+#description {
+  position: relative;
+  top: 50%;
+  left: 20%;
+  width:50%;
+}
+
+.descriptions {
+	position:relative;
+}
+
+#tutorimage {
+	width:20%;
+	height:20%;
+	border-radius: 50%;
+}
+
+#beehiveimage {
+	width:30%;
+	/* height:50%; */
+	border-radius: 25%/50%;
+}
+
+#BearMapsimage {
+	height:50%;
+	width:30%;
+}
+
+#DurantLoftimage {
+	width:30%;
+}
+
+#BYOGimage {
+	width:30%;
+}
+
+#Schemeimage {
+	width:30%;
+}
+
+.project-description {
+	display: flex;
+	margin-bottom: 50px;
+	overflow-wrap: break-word;
+}
+
+/* short for description */
+#des {
+	width:300px;
+	margin-top:-10px;
+	margin-left:300px;
+}
+
+.descriptions {
+	top:50%;
+}
+
+.imag {
+	border-radius: 50%;
+}
